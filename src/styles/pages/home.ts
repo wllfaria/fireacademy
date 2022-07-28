@@ -20,6 +20,7 @@ export const GameTitle = styled.h2`
     bottom: 80px;
     left: 50%;
     z-index: 1;
+    text-align: center;
     font-size: ${props => props.theme.fontSizes[1]};
     transform: translateX(-50%);
     color: ${props => props.theme.colors.text.white};
@@ -47,6 +48,10 @@ export const GameCard = styled.div<GameCardProps>`
     &:hover {
         ::after {
             background: linear-gradient(180deg, rgba(237,122,0,0), rgba(237,122,0, 0.3));
+        }
+
+        h2 {
+            transform: translateX(-50%) translateY(-100%);
         }
     }
 

@@ -13,7 +13,7 @@ const fixedStyles: PartialTheme<DefaultTheme> = {
 			100: '#1C013D',
 			200: '#37017A',
 			300: '#5302B8',
-			400: '#6F02F5',
+			400: '#7d1f1e',
 			500: '#ed7a00',
 			600: '#A660FD',
 			700: '#BC88FE',

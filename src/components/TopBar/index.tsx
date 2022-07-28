@@ -1,12 +1,19 @@
+import { useRouter } from 'next/router';
 import * as S from './styles';
 
 export function TopBar() {
+    const router = useRouter()
+
+    const shouldDisplayHome = () => {
+        return router.pathname !== '/valorant' && router.pathname !== '/league'
+    }
+
     return (
         <S.TopBar>
-            <img src="/static/logo.png" height="60"/>
+            <S.Logo src="/static/logo.png" height="60"/>
             <S.Nav>
                 <ul>
-                    <li>Início</li>
+                    {shouldDisplayHome() && <li>Início</li>}
                     <li>Saiba Mais</li>
                     <li>Professor</li>
                     <li>Contato</li>
